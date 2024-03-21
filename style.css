@@ -1,0 +1,440 @@
+@font-face {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: normal;
+    src: url('font/inter/Inter-Regular.woff'),
+        url('font/inter/Inter-Regular.woff2');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: bold;
+    font-style: normal;
+    src: url('font/inter/Inter-Bold.woff'),
+        url('font/inter/Inter-Bold.woff2');
+}
+
+body {
+    margin: 0;
+}
+.main-page {
+    max-width: 100%;
+    height: 1023px;
+    background-image: url('img/bg.png');
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    padding-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-page_logo {
+    width: 131px;
+    height: 100px;
+    background-image: url('img/aviator.png');
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.main-page_content {
+    width: 592px;
+    height: 480px;
+    display: flex;
+    margin: 100px auto 0;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.content-img {
+    width: 229px;
+    height: 480px;
+    background-image: url('img/Sequence-01\ 1.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.content-info {
+    width: 303px;
+    height: 234px;
+    box-sizing: border-box;
+}
+
+.step {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.step-item {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-number {
+    font-size: 16px;
+    line-height: 20px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #E10838;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.step-text {
+    font-size: 20px;
+    line-height: 25px;
+    width: 255px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.content-btn {
+    width: 303px;
+    height: 56px;
+    margin-top: 25px;
+}
+
+.main-btn {
+    width: 303px;
+    height: 56px;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-style: normal;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 2px solid #FF5471;
+    border-radius: 100px;
+    padding: 14px 50px 14px 50px;
+    background: linear-gradient(to right, #FF0E46, #E30036, #FD264E, #FF345D, #FD0A46);
+}
+
+.main-btn:hover {
+    filter: drop-shadow(0px 0px 20px #FF5471);
+}
+
+.coin {
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+}
+
+.coin1 {
+    width: 123px;
+    height: 89px;
+    background-image: url('img/coin\ 1.png');
+    top: 231px;
+    left: 1307px;
+}
+
+.coin2 {
+    width: 131px;
+    height: 77px;
+    background-image: url('img/coin\ 2.png');
+    top: 202px;
+    left: -31px;
+}
+
+.coin3 {
+    width: 86px;
+    height: 99px;
+    background-image: url('img/coin\ 3.png');
+    top: 887px;
+    left: 1098px;
+    rotate: 16.23;
+}
+
+.coin4 {
+    width: 72px;
+    height: 81px;
+    background-image: url('img/coin\ 4.png');
+    top: 931px;
+    left: 513px;
+    rotate: 148.43;
+}
+
+.coin:hover {
+    transform: rotate(90deg);
+    filter: drop-shadow(0px 0px 20px #FF5471);
+}
+
+
+.main-video {
+    width: 213px;
+    height: 400px;
+    position: absolute;
+    top: 22px;
+    left: 8px;
+}
+
+.video-btn_mute {
+    width: 150px;
+    height: 150px;
+    background-image: url('img/mute-sound-audio-svgrepo-com.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 10;
+    left: 39px;
+    cursor: pointer;
+}
+
+.video-btn_mute-big {
+    width: 190px;
+    height: 190px;
+    left: 19px;
+}
+
+.video-btn_mute-none {
+    display: none;
+}
+
+.progress {
+    width:178px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 11;
+    left: 25px;
+    bottom: 68px;
+}
+.progress1 {
+    width:1px;
+    height: 4px;
+    background-color: #E10838;
+    position: absolute;
+    z-index: 12;
+    left: 25px;
+    bottom: 68px;
+}
+            
+
+@media (max-width: 1248px) {
+    .main-page {
+        height: 700px;
+        padding-top: 40px;
+    }
+
+    .main-page_logo {
+        width: 65.5px;
+        height: 50px;
+    }
+
+    .main-page_content {
+        margin: 50px auto 0;
+    }
+
+    .coin1 {
+        top: 231px;
+        left: 1187px;
+    }
+    
+    .coin2 {
+        top: 110px;
+    }
+    
+    .coin3 {
+        top: 606px;
+        left: 697px;
+    }
+    
+    .coin4 {
+        top: 684px;
+        left: 278px;
+    }
+}
+
+@media (max-width: 960px) {
+    .main-page {
+        height: 768px;
+    }
+
+    .coin1 {
+        left: 887px;
+    }
+    
+    .coin2 {
+        top: 90px;
+    }
+    
+    .coin3 {
+        top: 686px;
+        left: 517px;
+    }
+    
+    .coin4 {
+        top: 744px;
+        left: 119px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-page {
+        height: 960px;
+    }
+
+    .main-page_content {
+        width: 100%;
+        display: block;
+        justify-content: center;
+    }
+
+    .main-video {
+        top: 22px;
+        left: calc(50% - 106.5px);
+    }
+
+    .video-btn_mute {
+        top: 140px;
+        left: calc(50% - 75px);
+    }
+
+    .video-btn_mute-big {
+        top: 120px;
+        left: calc(50% - 90px);
+    }
+
+    .progress {
+        left: calc(50% - 89px);
+    }
+    .progress1 {
+        left: calc(50% - 89px);
+    }
+
+    .content-info {
+        width: 100%;
+        height: 188px;
+        padding: 0 30px;
+    }
+
+    .content-img {
+        margin: 0 auto 50px;
+    }
+
+    .content-btn {
+        margin: 35px auto 0;
+    }
+
+    .step {
+        margin-bottom: 15px;
+    }
+
+    .step-text {
+        font-size: 16px;
+        width: 405px;
+    }
+
+    .step-number {
+        font-size: 14px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .coin1 {
+        top: 311px;
+        left: 697px;
+    }
+    
+    .coin2 {
+        top: 90px;
+    }
+    
+    .coin3 {
+        top: 866px;
+        left: 587px;
+    }
+    
+    .coin4 {
+        top: 934px;
+        left: 109px;
+    }
+}
+
+@media (max-width: 360px) {
+    .main-page {
+        height: 800px;
+        padding-top: 20px;
+        overflow: hidden;
+    }
+
+    .main-page_content {
+        margin: 30px auto 0;
+        max-width: 360px;
+    }
+
+    .content-img {
+        width: 190.52px;
+        height: 400px;
+    }
+
+    .main-video {
+        width: 178px;
+        top: -15px;
+        left: calc(50% - 89px);
+    }
+
+    .video-btn_mute {
+        top: 110px;
+        left: calc(50% - 75px);
+    }
+
+    .video-btn_mute-big {
+        top: 90px;
+        left: calc(50% - 90px);
+    }
+
+    .progress {
+        bottom: 136px;
+        left: calc(50% - 89px);
+    }
+    .progress1 {
+        bottom: 136px;
+        left: calc(50% - 89px);
+    }
+
+    .content-info {
+        width: 100%;
+        max-height: 192px;
+    }
+
+    .step-text {
+        font-size: 16px;
+        max-width: 193px;
+    }
+
+    .coin1 {
+        width: 72px;
+        height: 52px;
+        top: 283px;
+        left: 327px;
+    }
+    
+    .coin2 {
+        width: 97px;
+        height: 57px;
+        top: 95px;
+    }
+    
+    .coin3 {
+        width: 60px;
+        height: 69px;
+        top: 748.76px;
+        left: 298.55px;
+    }
+    
+    .coin4 {
+        width: 40px;
+        height: 45px;
+        top: 786.11px;
+        left: 98.38px;
+    }
+}
